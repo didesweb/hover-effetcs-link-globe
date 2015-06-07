@@ -1,0 +1,50 @@
+/*** Didesweb ***/
+/*** Diseño y desarrollo web ***/
+/*** http://didesweb.com/ ***/
+
+/*** Reset CSS ***/
+a{text-decoration: none;}
+ul, ol{list-style-type:none;}
+body{padding:2%;}
+/*** Navbar ***/
+nav{text-align:center;}
+li, a {
+  border-radius : 5px;
+}
+li {
+  background: #444444;
+  display: inline-block;
+  padding: 0.5em 1em 0 1em;
+  text-align:center;
+}
+span{color : #444444;}
+a {
+  display : block;
+  padding : 1em 1.5em 0.5em 1.5em;
+  font-size : 1.2em;
+  position: relative;
+  top: 0;
+  color: #FFFFFF;	
+}
+li:hover a {
+  top   : -25px;
+  color : #a1cc3a;
+  background-color: #CCCCCC;
+  text-shadow: 1px 1px 1px #555555;
+}
+li a:after {
+  display  : block;
+  content  : '';
+  position : absolute;
+  top  : 100%;
+  left : 42%;
+  border-style : solid;
+  border-color : transparent;
+  border-width : 13px 8px 0 8px;
+}
+li:hover a:after {
+  border-color : #CCCCCC transparent transparent transparent;
+}
+a, li:hover a, li a:after, li:hover a:after  {		
+  transition : all .5s;
+}
